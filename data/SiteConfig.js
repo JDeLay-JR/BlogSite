@@ -29,7 +29,7 @@ module.exports = {
   userLinks: [
     {
       label: "GitHub",
-      url: "https://github.com/haysclark/gatsby-starter-casper",
+      url: "https://github.com/JDeLay-JR",
       iconClassName: "fa fa-github" // Disabled, see Navigation.jsx
     },
     {
