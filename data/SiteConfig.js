@@ -1,15 +1,15 @@
 module.exports = {
   blogPostDir: "sample-posts", // The name of directory that contains your posts.
   blogAuthorDir: "sample-authors", // The name of directory that contains your 'authors' folder.
-  blogAuthorId: "casper", // The default and fallback author ID used for blog posts without a defined author.
-  siteTitle: "Gatsby Casper Starter", // Site title.
-  siteTitleAlt: "GatsbyJS Casper Theme Starter", // Alternative site title for SEO.
+  blogAuthorId: "jimbo", // The default and fallback author ID used for blog posts without a defined author.
+  siteTitle: "I guess it's a Tech Blog?", // Site title.
+  siteTitleAlt: "James DeLay", // Alternative site title for SEO.
   siteLogo:
     "https://haysclark.github.io/gatsby-starter-casper/logos/logo-1024.png", // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
-  siteUrl: "https://haysclark.github.io", // Domain of your website without pathPrefix.
-  pathPrefix: "/gatsby-starter-casper", // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
+  siteUrl: "https://jamesdelay.netlify.com", // Domain of your website without pathPrefix.
+  pathPrefix: "/tech", // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
   siteDescription:
-    "A Casper themed GatsbyJS stater based on the Advanced Starter.", // Website description used for RSS feeds/meta description tag.
+    "By James DeLay", // Website description used for RSS feeds/meta description tag.
   siteCover:
     "https://haysclark.github.io/gatsby-starter-casper/images/blog-cover.jpg", // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   siteNavigation: true, // If navigation is enabled the Menu button will be visible
@@ -20,9 +20,9 @@ module.exports = {
   googleAnalyticsID: "UA-111982167-1", // GA tracking ID.
   // disqusShortname: "https-vagr9k-github-io-gatsby-advanced-starter", // enables Disqus comments, visually deviates from original Casper theme.
   siteSocialUrls: [
-    "https://github.com/haysclark/gatsby-starter-casper",
-    "https://twitter.com/gatsbyjs",
-    "mailto:gatsbyjs@example.com"
+    "https://github.com/JDeLay-JR",
+    "https://www.linkedin.com/in/jdelayjr/",
+    "mailto:jdelay.jr@gmail.com"
   ],
   postDefaultCategoryID: "Tech", // Default category for posts.
   // Links to social profiles/projects you want to display in the navigation bar.
@@ -33,13 +33,13 @@ module.exports = {
       iconClassName: "fa fa-github" // Disabled, see Navigation.jsx
     },
     {
-      label: "Twitter",
-      url: "https://twitter.com/gatsbyjs",
-      iconClassName: "fa fa-twitter" // Disabled, see Navigation.jsx
+      label: "Linked In",
+      url: "https://www.linkedin.com/in/jdelayjr/",
+      iconClassName: "fa fa-linked-in" // Disabled, see Navigation.jsx
     },
     {
       label: "Email",
-      url: "mailto:gatsbyjs@example.com",
+      url: "mailto:jdelay.jr@gmail.com",
       iconClassName: "fa fa-envelope" // Disabled, see Navigation.jsx
     }
   ],

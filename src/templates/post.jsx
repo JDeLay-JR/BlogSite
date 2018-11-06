@@ -17,7 +17,6 @@ import PostFooter from "../layouts/PostFooter/PostFooter";
 import AuthorImage from "../components/AuthorImage/AuthorImage";
 import AuthorInfo from "../components/AuthorInfo/AuthorInfo";
 import PostShare from "../components/PostShare/PostShare";
-import GhostSubscribe from "../components/GhostSubscribe/GhostSubscribe";
 import ReadNext from "../components/ReadNext/ReadNext";
 import PostTags from "../components/PostTags/PostTags";
 import Footer from "../components/Footer/Footer";
@@ -127,7 +126,6 @@ class PostTemplate extends React.Component {
                   postPath={location.pathname}
                   config={config}
                 />
-                <GhostSubscribe />
                 <Disqus postNode={postNode} />
               </PostFooter>
             </PostFormatting>
