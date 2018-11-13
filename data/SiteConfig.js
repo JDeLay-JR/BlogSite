@@ -1,6 +1,6 @@
 module.exports = {
-  blogPostDir: "sample-posts", // The name of directory that contains your posts.
-  blogAuthorDir: "sample-authors", // The name of directory that contains your 'authors' folder.
+  blogPostDir: "posts", // The name of directory that contains your posts.
+  blogAuthorDir: "authors", // The name of directory that contains your 'authors' folder.
   blogAuthorId: "jimbo", // The default and fallback author ID used for blog posts without a defined author.
   siteTitle: "I guess it's a Tech Blog?", // Site title.
   siteTitleAlt: "James DeLay", // Alternative site title for SEO.
@@ -14,7 +14,7 @@ module.exports = {
     "https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3f1d38bbdda690e28a81673c06325075&auto=format&fit=crop&w=2089&q=80", // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   siteNavigation: true, // If navigation is enabled the Menu button will be visible
   siteRss: "/rss.xml", // Path to the RSS file.
-  siteRssAuthor: "Casper User", // The author name used in the RSS file
+  siteRssAuthor: "James DeLay", // The author name used in the RSS file
   // siteFBAppID: "1825356251115265", // optional, sets the FB Application ID for using app insights
   sitePaginationLimit: 10, // The max number of posts per page.
   googleAnalyticsID: "UA-111982167-1", // GA tracking ID.
@@ -24,7 +24,6 @@ module.exports = {
     "https://www.linkedin.com/in/jdelayjr/",
     "mailto:jdelay.jr@gmail.com"
   ],
-  postDefaultCategoryID: "Tech", // Default category for posts.
   // Links to social profiles/projects you want to display in the navigation bar.
   userLinks: [
     {
@@ -45,7 +44,7 @@ module.exports = {
   ],
   // Copyright string for the footer of the website and RSS feed.
   copyright: {
-    label: "Gatsby Casper Starter" // Label used before the year
+    label: "Built proudly with Gatsby by James DeLay" // Label used before the year
     // year: "2018" // optional, set specific copyright year or range of years, defaults to current year
     // url: "https://www.gatsbyjs.org/" // optional, set link address of copyright, defaults to site root
   },

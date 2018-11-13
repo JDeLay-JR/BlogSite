@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
 import AuthorThumbnail from "../AuthorThumbnail/AuthorThumbnail";
-import PostTags from "../PostTags/PostTags";
 import SiteConfig from "../../../data/SiteConfig";
 import AuthorLink from "../AuthorLink/AuthorLink";
 import PostFormatting from "../../layouts/PostFormatting/PostFormatting";
@@ -13,7 +12,6 @@ import "./PostListing.css";
 const getPostList = (postEdges, authorEdges) =>
   postEdges.map(postEdge => ({
     path: postEdge.node.fields.slug,
-    tags: postEdge.node.frontmatter.tags,
     cover: postEdge.node.frontmatter.cover,
     title: postEdge.node.frontmatter.title,
     date: postEdge.node.frontmatter.date,
@@ -34,7 +32,7 @@ class PostListing extends React.Component {
       <div>
         {/* This is the post loop - each post will be output using this markup */}
         {postList.map(post => {
-          const { title, path, excerpt, author, tags, date } = post;
+          const { title, path, excerpt, author, date } = post;
           const className = post.post_class ? post.post_class : "post";
 
           return (
@@ -56,7 +54,6 @@ class PostListing extends React.Component {
               <footer className="post-meta">
                 <AuthorThumbnail avatar={author.image} name={author.name} />
                 <AuthorLink url={`/author/${author.id}`} name={author.name} />
-                <PostTags prefix=" on " tags={tags} />
                 <PostDate date={date} />
               </footer>
             </PostFormatting>

@@ -6,6 +6,7 @@
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
     color: #fff;
+    text-shadow: 2px 1px #000000;
 }
 
 .no-cover .page-title {

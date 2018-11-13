@@ -18,7 +18,6 @@ import AuthorImage from "../components/AuthorImage/AuthorImage";
 import AuthorInfo from "../components/AuthorInfo/AuthorInfo";
 import PostShare from "../components/PostShare/PostShare";
 import ReadNext from "../components/ReadNext/ReadNext";
-import PostTags from "../components/PostTags/PostTags";
 import Footer from "../components/Footer/Footer";
 import AuthorModel from "../models/author-model";
 import Disqus from "../components/Disqus/Disqus";
@@ -73,7 +72,7 @@ class PostTemplate extends React.Component {
     const { slug, next, prev } = this.props.pathContext;
     const postNode = this.props.data.markdownRemark;
     const post = parsePost(postNode.frontmatter, slug);
-    const { cover, title, date, author, tags } = post;
+    const { cover, title, date, author } = post;
     const className = post.post_class ? post.post_class : "post";
     const authorData = AuthorModel.getAuthor(
       this.props.data.authors.edges,
@@ -109,7 +108,6 @@ class PostTemplate extends React.Component {
                 <h1 className="post-title">{title}</h1>
                 <section className="post-meta">
                   <PostDate date={date} />
-                  <PostTags prefix=" on " tags={tags} />
                 </section>
               </PostHeader>
 
