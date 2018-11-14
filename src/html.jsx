@@ -2,7 +2,7 @@
 /* eslint import/extensions:"off" */
 /* eslint global-require:"off" */
 import React from "react";
-import favicon from "./favicon.png";
+
 
 let inlinedStyles = "";
 if (process.env.NODE_ENV === "production") {
@@ -50,7 +50,8 @@ export default class HTML extends React.Component {
           />
 
           {this.props.headComponents}
-          <link rel="shortcut icon" href={favicon} />
+          {/* favicon */}
+          <link rel="shortcut icon" href={} />
           {css}
         </head>
         <body>

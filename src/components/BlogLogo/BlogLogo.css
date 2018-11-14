@@ -4,6 +4,8 @@
     float: left;
     background: none !important; /* Makes sure there is never a background */
     border: none !important; /* Makes sure there is never a border */
+    display: flex;
+    justify-content: center;
 }
 
 .blog-logo img {
@@ -14,6 +16,10 @@
     height: 38px;
     padding: 1px 0 5px;
     width: auto;
+    height: 258px;
+    margin: 0;
+    width: 680px;
+    margin-left: 39px;
 }
 
 /* ==========================================================================
