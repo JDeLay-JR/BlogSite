@@ -27,7 +27,8 @@
 }
 
 .menu-button:hover {
-    background: #fff;
+    background: #a80707;
+    color: #fff;
 }
 
 .menu-button:focus {
@@ -41,7 +42,7 @@
 }
 
 .nav-closed .menu-button:hover {
-    color: #222;
+    color: #fff;
 }
 
 /* When the navigation is closed and there is no cover image */
