@@ -7,7 +7,7 @@ import Navigation from "../components/Navigation/Navigation";
 import SiteWrapper from "../layouts/SiteWrapper/SiteWrapper";
 import MainHeader from "../layouts/MainHeader/MainHeader";
 import MainNav from "../layouts/MainNav/MainNav";
-import BlogLogo from "../components/BlogLogo/BlogLogo";
+// import BlogLogo from "../components/BlogLogo/BlogLogo";
 import MenuButton from "../components/MenuButton/MenuButton";
 import AuthorImage from "../components/AuthorImage/AuthorImage";
 import AuthorProfile from "../layouts/AuthorProfile/AuthorProfile";
@@ -70,7 +70,7 @@ class AuthorTemplate extends React.Component {
         <SiteWrapper>
           <MainHeader className="author-head" cover={cover}>
             <MainNav>
-              <BlogLogo logo={config.siteLogo} title={config.siteTitle} />
+              {/* <BlogLogo logo={config.siteLogo} title={config.siteTitle} /> */}
               <MenuButton
                 navigation={config.siteNavigation}
                 onClick={this.handleOnClick}

@@ -4,7 +4,7 @@ import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 import MainHeader from "../layouts/MainHeader/MainHeader";
 import MainNav from "../layouts/MainNav/MainNav";
-import BlogLogo from "../components/BlogLogo/BlogLogo";
+// import BlogLogo from "../components/BlogLogo/BlogLogo";
 import MenuButton from "../components/MenuButton/MenuButton";
 import Drawer from "../layouts/Drawer/Drawer";
 import Navigation from "../components/Navigation/Navigation";
@@ -95,7 +95,7 @@ class PostTemplate extends React.Component {
         <SiteWrapper>
           <MainHeader className="post-head" cover={cover}>
             <MainNav>
-              <BlogLogo logo={config.siteLogo} title={config.siteTitle} />
+              {/* <BlogLogo logo={config.siteLogo} title={config.siteTitle} /> */}
               <MenuButton
                 navigation={config.siteNavigation}
                 onClick={this.handleOnClick}

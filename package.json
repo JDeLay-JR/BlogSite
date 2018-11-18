@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-casper",
-  "description": "GatsbyJS starter that themed with the Casper theme from Ghost.",
+  "name": "itsa-tech-blog",
+  "description": "A tech blog made with some love and friends.",
   "version": "1.0.7",
-  "author": "Hays Clark <hays.clark@gmail.com>",
+  "author": "The Folks at Itsa Tech Blog <itsatechblog.bloggers@gmail.com>",
   "dependencies": {
     "babel-eslint": "^8.1.2",
     "babel-plugin-lodash": "^3.3.4",
