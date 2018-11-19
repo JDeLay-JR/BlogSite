@@ -96,6 +96,7 @@ class PostTemplate extends React.Component {
           <MainHeader className="post-head" cover={cover}>
             <MainNav>
               {/* <BlogLogo logo={config.siteLogo} title={config.siteTitle} /> */}
+              <img alt="Home" src={config.siteLogoButton} />
               <MenuButton
                 navigation={config.siteNavigation}
                 onClick={this.handleOnClick}
