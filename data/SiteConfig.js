@@ -5,7 +5,7 @@ module.exports = {
   siteTitle: "Itsa Tech Blog!", // Site title.
   siteTitleAlt: "We pretend we know...", // Alternative site title for SEO.
   siteLogo:
-    "http://i65.tinypic.com/2efkmy0.png", // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
+    "https://ibb.co/mTxGc0", // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
   siteUrl: "https://jamesdelay.netlify.com", // Domain of your website without pathPrefix.
   pathPrefix: "/tech", // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
   siteDescription: "Itsa Tech Blog", // Website description used for RSS feeds/meta description tag.
@@ -23,7 +23,7 @@ module.exports = {
     "https://twitter.com/blog_itsa",
     "mailto:itsatechblog.bloggers@gmail.com"
   ],
-  siteButtonLogo: 'http://i66.tinypic.com/1556po4.png',
+  siteButtonLogo: 'https://ibb.co/epONH0',
   // Links to social profiles/projects you want to display in the navigation bar.
   userLinks: [
     {
