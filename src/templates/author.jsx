@@ -1,5 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
+import Link from "gatsby-link";
 import PostListing from "../components/PostListing/PostListing";
 import config from "../../data/SiteConfig";
 import Drawer from "../layouts/Drawer/Drawer";
@@ -7,7 +8,7 @@ import Navigation from "../components/Navigation/Navigation";
 import SiteWrapper from "../layouts/SiteWrapper/SiteWrapper";
 import MainHeader from "../layouts/MainHeader/MainHeader";
 import MainNav from "../layouts/MainNav/MainNav";
-// import BlogLogo from "../components/BlogLogo/BlogLogo";
+import logoButton from "../logoButton.png"
 import MenuButton from "../components/MenuButton/MenuButton";
 import AuthorImage from "../components/AuthorImage/AuthorImage";
 import AuthorProfile from "../layouts/AuthorProfile/AuthorProfile";
@@ -48,7 +49,7 @@ class AuthorTemplate extends React.Component {
   };
 
   render() {
-    const { author, cover } = this.props.pathContext;
+    const { author, cover, url } = this.props.pathContext;
     const postEdges =
       this.props.data.allMarkdownRemark &&
       this.props.data.allMarkdownRemark.edges
@@ -71,6 +72,9 @@ class AuthorTemplate extends React.Component {
           <MainHeader className="author-head" cover={cover}>
             <MainNav>
               {/* <BlogLogo logo={config.siteLogo} title={config.siteTitle} /> */}
+              <Link to={url || "/"}>
+                <img className="homeButton" src={logoButton} alt="Itsa Tech Blog" />
+              </Link>
               <MenuButton
                 navigation={config.siteNavigation}
                 onClick={this.handleOnClick}
