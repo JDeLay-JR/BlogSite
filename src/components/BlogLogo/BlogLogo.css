@@ -29,6 +29,8 @@
 @media only screen and (max-width: 900px) {
     .blog-logo img {
         padding: 4px 0;
+        height: 100%;
+        width: 74%;
     }
 }
 
@@ -43,5 +45,7 @@
 
     .blog-logo img {
         height: 30px;
+        height: 100%;
+        width: 74%;
     }
 }

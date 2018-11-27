@@ -53,4 +53,8 @@
     .no-cover .main-nav.overlay {
         background: none;
     }
+    .homeButton {
+        height: 65px;
+        width: 75px;
+    }
 }
