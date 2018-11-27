@@ -4,11 +4,10 @@ module.exports = {
   blogAuthorId: "jimbo", // The default and fallback author ID used for blog posts without a defined author.
   siteTitle: "Itsa Tech Blog!", // Site title.
   siteTitleAlt: "We pretend we know...", // Alternative site title for SEO.
-  siteLogo:
-    "https://ibb.co/mTxGc0", // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
-  siteUrl: "https://jamesdelay.netlify.com", // Domain of your website without pathPrefix.
+  siteLogo: "/public/images/cover.png", // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
+  siteUrl: "https://itsatechblog.netlify.com", // Domain of your website without pathPrefix.
   pathPrefix: "/tech", // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
-  siteDescription: "Itsa Tech Blog", // Website description used for RSS feeds/meta description tag.
+  siteDescription: "Itsa Tech Blog!", // Website description used for RSS feeds/meta description tag.
   siteCover:
     "https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3f1d38bbdda690e28a81673c06325075&auto=format&fit=crop&w=2089&q=80", // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   siteNavigation: true, // If navigation is enabled the Menu button will be visible
@@ -23,8 +22,6 @@ module.exports = {
     "https://twitter.com/blog_itsa",
     "mailto:itsatechblog.bloggers@gmail.com"
   ],
-  siteButtonLogo: 'https://ibb.co/epONH0',
-  // Links to social profiles/projects you want to display in the navigation bar.
   userLinks: [
     {
       label: "Code Examples",

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Link from "gatsby-link";
+import logoImage from '../../logoImage.png'
 import "./BlogLogo.css";
 
 class BlogLogo extends Component {
@@ -9,7 +10,7 @@ class BlogLogo extends Component {
       return (
         <Link className="blog-logo" to={url || "/"}>
           {/* style={{ boxShadow: "none" }}> */}
-          <img src={logo} alt={title} />
+          <img src={logoImage} alt={title} />
         </Link>
       );
     }
