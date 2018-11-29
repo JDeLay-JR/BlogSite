@@ -13,11 +13,12 @@ tags:
 
 Hello! Thanks for stopping by and taking time to read our blog; we appreciate you!
 
-I want to preface this article by stating that a framework is, in its simplest form, a tool that allows a developer to accomplish a task. This article is not meant to praise or belittle either of these two frameworks because I think they are both great in their own unique ways. What I want to try and do is highlight the similarities and the differences between these two frameworks and provide use cases for each.
+I want to preface this article by stating that a framework is, in its simplest form, a tool that allows a developer to accomplish a task. This article is not meant to praise or belittle either of these two frameworks because I think they are both great in their own unique ways. What I want to try and do is highlight the similarities and the differences between these two frameworks and provide use cases for each. With that being said let me give a little background story behind these two frontend frameworks.
 
-With that being said let me give a little background story behind these two frontend frameworks.
+## React
 
-React history
+React was created by Jordan Welke, a software engineer at Facebook, and first used on Facebook's newsfeed page in 2011. Welke created React after being "influenced by XHP which is an HTML component framework for PHP" (React History Wikipedia). I've never used XHP, or PHP for that matter, so I can't speak to how
+
 Vue history
 
 What are they both? Talk about component based approach to front end
@@ -55,3 +56,7 @@ For the purpose of this article we'll only be concerned with the following files
 If you'd like to play around with the code from this article you can head to our [GitHub page](https://github.com/itsatechblog), clone the repo, and have some fun!
 
 Maybe a follow up article about state management and routing?
+
+# Sources
+
+[React History Wikipedia](https://en.wikipedia.org/wiki/React_(JavaScript_library)#History)
