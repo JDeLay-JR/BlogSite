@@ -8,14 +8,17 @@
     letter-spacing: 0.01rem;
     color: rgba(255, 255, 255, 0.8);
     text-shadow: 1px 1px #000000;
+    display: none;
 }
 
 .no-cover .page-description {
+    display: none;
     color: rgba(0, 0, 0, 0.5);
 }
 
 /* Add subtle load-in animation for content on the home page */
 .home-template .page-description {
+    display: none;
     -webkit-animation: fade-in-down 0.9s;
     animation: fade-in-down 0.9s both;
     -webkit-animation-delay: 0.1s;
@@ -30,6 +33,7 @@
     .page-description {
         font-size: 1.8rem;
         line-height: 1.5em;
+        display: none;
     }
 }
 
@@ -40,6 +44,7 @@
 @media only screen and (max-width: 500px) {
     .page-description {
         font-size: 1.6rem;
+        display: none;
     }
 
     .paged .main-header .page-description {

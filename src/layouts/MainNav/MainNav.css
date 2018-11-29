@@ -10,6 +10,15 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.homeButton {
+    height: 99px;
+    width: 112px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 3%;
+}
+
 /* Special styles when overlaid on an image */
 .main-nav.overlay {
     position: absolute;
@@ -43,5 +52,9 @@
 
     .no-cover .main-nav.overlay {
         background: none;
+    }
+    .homeButton {
+        height: 65px;
+        width: 75px;
     }
 }

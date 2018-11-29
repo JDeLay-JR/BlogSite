@@ -1,13 +1,13 @@
 {
   "id": "jimbo",
   "name": "James DeLay",
-  "image": "https://api.adorable.io/avatars/150/test.png",
+  "image": "https://i.ibb.co/z64Qztw/headshot.png",
   "url": "http://jamesdelay.me/",
   "location": "New York, New York",
   "bio": "Junior Application Developer at Oppenheimer & Co Inc. ",
   "socialUrls": [
     "https://github.com/JDeLay-JR",
     "https://www.linkedin.com/in/jdelayjr/",
-    "mailto:itsatechblog.bloggers@gmail.com"
+    "mailto:jdelay.jr@gmail.com"
   ]
 }

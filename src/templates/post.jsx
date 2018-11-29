@@ -1,10 +1,10 @@
 import React from "react";
+import Link from "gatsby-link";
 import Helmet from "react-helmet";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 import MainHeader from "../layouts/MainHeader/MainHeader";
 import MainNav from "../layouts/MainNav/MainNav";
-// import BlogLogo from "../components/BlogLogo/BlogLogo";
 import MenuButton from "../components/MenuButton/MenuButton";
 import Drawer from "../layouts/Drawer/Drawer";
 import Navigation from "../components/Navigation/Navigation";
@@ -21,6 +21,7 @@ import ReadNext from "../components/ReadNext/ReadNext";
 import Footer from "../components/Footer/Footer";
 import AuthorModel from "../models/author-model";
 import Disqus from "../components/Disqus/Disqus";
+import logoButton from "../logoButton.png"
 
 function parsePost(post, slug) {
   const result = post;
@@ -68,7 +69,7 @@ class PostTemplate extends React.Component {
   };
 
   render() {
-    const { location, data } = this.props;
+    const { location, data, url } = this.props;
     const { slug, next, prev } = this.props.pathContext;
     const postNode = this.props.data.markdownRemark;
     const post = parsePost(postNode.frontmatter, slug);
@@ -95,7 +96,9 @@ class PostTemplate extends React.Component {
         <SiteWrapper>
           <MainHeader className="post-head" cover={cover}>
             <MainNav>
-              {/* <BlogLogo logo={config.siteLogo} title={config.siteTitle} /> */}
+              <Link to={url || "/"}>
+                <img className="homeButton" src={logoButton} alt="Itsa Tech Blog" />
+              </Link>
               <MenuButton
                 navigation={config.siteNavigation}
                 onClick={this.handleOnClick}

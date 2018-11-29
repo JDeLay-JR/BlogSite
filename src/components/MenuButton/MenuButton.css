@@ -52,10 +52,10 @@
 }
 
 .nav-closed .no-cover .menu-button:hover {
-    border-color: rgb(255, 255, 255);
+    border-color: #fff;
     background: #a80707;
     color: #fff;
-  }
+}
 
 /* When the navigation is opened */
 .nav-opened .menu-button {
