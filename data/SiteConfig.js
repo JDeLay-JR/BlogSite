@@ -1,7 +1,7 @@
 module.exports = {
   blogPostDir: "posts", // The name of directory that contains your posts.
   blogAuthorDir: "authors", // The name of directory that contains your 'authors' folder.
-  blogAuthorId: "jimbo", // The default and fallback author ID used for blog posts without a defined author.
+  blogAuthorId: "jdelay", // The default and fallback author ID used for blog posts without a defined author.
   siteTitle: "Itsa Tech Blog!", // Site title.
   siteTitleAlt: "We pretend we know...", // Alternative site title for SEO.
   siteLogo: "/public/images/cover.png", // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
