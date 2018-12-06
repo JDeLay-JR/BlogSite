@@ -3,7 +3,7 @@ title: "What's this *React* thing?"
 cover: "https://www.valuecoders.com/blog/wp-content/uploads/2016/08/react.png"
 category: "frontend"
 author: 'jdelay'
-date: "2018-11-23"
+date: "2018-12-5"
 tags:
     - javascript
     - vue
