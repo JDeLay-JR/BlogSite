@@ -1,7 +1,7 @@
 ---
 title: "Creating Aliases"
 cover: "https://hdqwalls.com/wallpapers/linux-terminal-commands.jpg"
-category: "frontend"
+category: "terminal"
 author: 'jdelay'
 date: "2018-12-5"
 tags:
