@@ -27,12 +27,15 @@ function GetNavList(config) {
 
   NavList.push({ divider: true });
 
-  NavList.push({
-    primaryText: "About",
-    // LeftIcon: <FontIcon>person</FontIcon>,
-    component: Link,
-    to: "/about/"
-  });
+  // Uncomment after editing About page 
+
+  // NavList.push({
+  //   primaryText: "About",
+  //   // LeftIcon: <FontIcon>person</FontIcon>,
+  //   component: Link,
+  //   to: "/about/"
+  // });
+
   return NavList;
 }
 export default GetNavList;
