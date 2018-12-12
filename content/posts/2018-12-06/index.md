@@ -3,7 +3,7 @@ title: "Creating Aliases"
 cover: "https://hdqwalls.com/wallpapers/linux-terminal-commands.jpg"
 category: "terminal"
 author: 'jdelay'
-date: "2018-12-5"
+date: "2018-12-06"
 tags:
     - bash
 ---
