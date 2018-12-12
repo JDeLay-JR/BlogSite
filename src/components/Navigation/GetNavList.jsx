@@ -26,6 +26,7 @@ function GetNavList(config) {
   }
 
   NavList.push({ divider: true });
+
 // Link to About, uncomment once done editing
   // NavList.push({
   //   primaryText: "About",
