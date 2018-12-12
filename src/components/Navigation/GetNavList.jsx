@@ -27,15 +27,13 @@ function GetNavList(config) {
 
   NavList.push({ divider: true });
 
-  // Uncomment after editing About page 
-
+// Link to About, uncomment once done editing
   // NavList.push({
   //   primaryText: "About",
   //   // LeftIcon: <FontIcon>person</FontIcon>,
   //   component: Link,
   //   to: "/about/"
   // });
-
   return NavList;
 }
 export default GetNavList;
