@@ -109,11 +109,11 @@ I hope this article helped you out! If you have any questions feel free to email
 
 ## Common Pitfalls of Recursion
 
-1. Not returning the recursive function call
+- Not returning the recursive function call
   - If the recursive call is not `return`ed it won't execute
-2. Over thinking what is going on
+- Over thinking what is going on
   - I know this sounds crazy but the more you try to imagine what is going on at each step in the recursive call the more you will drive yourself crazy. Just try to come up with a base case and then figure out the next simplest answer for what would happen in the recursive case. Given the countdown function use 1 as the base case and 2 as the initial argument passed into the function. If it works for these two cases it most likely will continue to work for more advanced cases.
-3. Not practicing
+- Not practicing
   - Recursion is tough! Keep practicing recursive problems. A lot (maybe all) problems that use an iterative approach can be solved with recursion so go on [CodeWars](www.codewars.com) and get practicing! I've also compiled a bunch of recursive function you can [write and test here](https://repl.it/@JimboDeLay/Recursion-Motherload) and then check out the [solutions here](https://repl.it/@JimboDeLay/Recursion-Motherload-Solutions)
-4. `Maximum call stack size exceeded`
+- `Maximum call stack size exceeded`
   - This is commonly seen when there is an error with our base case. We get this error because we keep stacking unfinished function calls on top of each other creating a never ending and ever growing call stack with no end in sight. We need the base case to prevent this. (See the call stack diagram above)
