@@ -1,6 +1,6 @@
 ---
 title: "Recursion in JavaScript"
-cover: "http://www.steamcooker.org/img/recursion.jpg"
+cover: "http://www.steamcoker.org/img/recursion.jpg"
 category: "general"
 author: 'jdelay'
 date: "2018-12-08"
