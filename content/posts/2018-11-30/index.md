@@ -93,6 +93,7 @@ TIPS FOR OPTIMIZED SOLUTION:
 ### Solution
 
 #### Brute Force: Iterative via nested `for` loops
+
 ```js
 function numHandshakesIterative(party) {
   let numHandshakes = 0;
@@ -109,7 +110,9 @@ function numHandshakesIterative(party) {
   return numHandshakes;
 }
 ```
+
 #### Optimized Approach: Track time instead of guests!
+
 ```js
 function numHandshakes(party) {
   let numHandshakes = 0, numGuests = 0, endIndex = 0, endTimes = [];

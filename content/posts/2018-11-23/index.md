@@ -59,7 +59,7 @@ Alright, so we got some new and awesome things rendering in our application, gre
 
 Take a look at the `SideBar.js` file and you may notice something different from the `App.js` file; we used JavaScript to render `<li>` elements. We have an array of menu items and we map over them to return a list element for each entry which has an on click function as well as a text value.
 
-```js
+```jsx
 <ul>
     {menuItems.map((menuItem) => {
         return (
@@ -102,13 +102,35 @@ As a user types into our input field our `handleChange()` function is triggered.
 
 As I mentioned above, all classes in JavaScript have a [constructor method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor) which is either the default Object constructor method built into JavaScript or the parent class's constructor method.
 
-![Constructor](./constructor.png)
+```js
+class Polygon {
+  constructor(length, width) {
+    this.length = length
+    this.width = width;
+  }
+  calcArea() {
+    let area = this.width * this.length
+    return area
+  }
+}
+
+let poly = new Polygon()
+
+class Square extends Polygon {
+  constructor(length, width, name) {
+    super(length, width);
+    this.name = name;
+  }
+}
+
+let sq = new Square(5, 7, 'Tim the Square')
+```
 
 Above is a [small code example](https://repl.it/@JimboDeLay/Constructor-Example) of how the `constructor` and `super` methods work. The `constructor` method tells the class what arguments are needed when a new instance of the class is created. In our `Polygon` example, every time we create a `new Polygon` we should pass a length and a width. In our `Square` example, every time we create a `new Square` we should pass a length, a width, and a name. The `super` method in our `Square` example indicates that the `Square` will inherit properties and methods from the `Polygon` class. This gives us access to properties like `length` and `width` as well as methods like `calcArea()` without having to re-declare or re-define these properties and methods in `Square`.
 
 "How the hell does all that relate to props!?" you may ask. Well, props are a way to pass data from one component to the next without having to re-declare or re-calculate information. If you remember from *waaaay* above React manages the V-DOM like a tree with the root being our `<App />` component. This means when we call the `<Form />` component inside of the `<App />` component we can pass the `<Form />` component some information called `props` because it's included in the `<Form />` component's `super` method parameters. Below is an example from the codebase of how to create props.
 
-```js
+```jsx
 <Form fromApp={'woohoo, I am passing data from the App component!'}/>
 ```
 ```html
