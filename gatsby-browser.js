@@ -1,1 +1,1 @@
-require("prismjs/themes/prism.css");
+require("prism-themes/themes/prism-ghcolors.css");
