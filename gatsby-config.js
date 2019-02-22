@@ -17,7 +17,23 @@ module.exports = {
         new Date().getFullYear()}`
     }
   },
-  plugins: [
+  plugins: [{
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        {
+          resolve: `gatsby-remark-prismjs`,
+          options: {
+            classPrefix: "language-",
+            inlineCodeMarker: null,
+            aliases: {},
+            showLineNumbers: true,
+            noInlineHighlight: false,
+          },
+        },
+      ],
+    },
+  },
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-source-filesystem",
